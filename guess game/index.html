@@ -1,29 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
-    <title>Guessing game</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <title>Guessing game</title>
 </head>
+
 <body>
-    <h1>Guess the number and win a "pastel de Nata"</h1>
+  <h1>Guess the number and win a "pastel de Nata"</h1>
+  <img src="pics/pastel-de-nata.jpg" alt="Description for image" width="50%">
+  <p class="gameDescription">Hungry? No? If you really were not, then look at the picture above for five minutes straight and come back.
+    <br>
+  It's typical Portuguese pastry. Unfortunately, there is only one left... we will make a little game to decide who will get it.
+  If a player guesses a secret number, he or she wins it!
+    <br>
+  We have selected a random number between 1 and 17. See if you can guess it in 3 turns.
+  We'll hint you if the guess was too high or too low.</p>
 
-    <p class="gameDescription">We have selected a random number between 1 and 17. See if you can guess it in 3 turns. We'll tell you if your guess was too high or too low.</p>
+  <div class="form">
+    <label for="guessField">Enter a guess: </label>
+    <input type="text" id="guessField" class="guessField">
+    <input type="submit" value="Submit guess" class="guessSubmit">
+  </div>
 
-    <div class="form">
-      <label for="guessField">Enter a guess: </label>
-      <input type="text" id="guessField" class="guessField">
-      <input type="submit" value="Submit guess" class="guessSubmit">
-    </div>
+  <div class="resultParas">
+    <p class="guesses"></p>
+    <p class="lastResult"></p>
+    <p class="lowOrHi"></p>
+  </div>
 
-    <div class="resultParas">
-      <p class="guesses"></p>
-      <p class="lastResult"></p>
-      <p class="lowOrHi"></p>
-    </div>
+</body>
 
-  </body>
 </html>
