@@ -10,6 +10,7 @@ html {
 
   body {
     display:flex;
+    position: relative;
     flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
@@ -21,6 +22,10 @@ html {
 
   .form {
       margin: 0% 2%;
+  }
+  .resultParas{
+    width:50%;
+    border-radius: 2px rgb(205, 6, 212);
   }
 
   .gameDescription{
@@ -34,4 +39,8 @@ html {
   .lastResult {
     color: white;
     padding: 3px;
+  }
+
+  .button {
+    background-color: aqua;
   }

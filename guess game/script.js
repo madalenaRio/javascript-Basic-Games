@@ -14,7 +14,7 @@
 
     function checkGuess() {
       const userGuess = Number(guessField.value); //fetches the guess number
-      if (guessCount === 1) { // if condition to verify if its the player first guess
+      if (guessCount === 1) { // if condition to verify if the attempt is the player first guess
         guesses.textContent = 'Previous guesses: ';
       }
       guesses.textContent += userGuess + ' '; // appending the guess to previous ones + the empty brackets is to add a blank space between each guess number shown.
@@ -50,11 +50,12 @@
     //now we must set a game over function to complete the "game cycle"
 
     function setGameOver() {
-      //to stop user from adding more gueses after its turn is over
+      //to stop user from playing more  after its turn is over
       guessField.disabled = true;
       guessSubmit.disabled = true;
       //creats a new button and adds it to the HTML in order to allow user to begin a new game
       resetButton = document.createElement('button');
+      resetButton.style.width = '50%';
       resetButton.textContent = 'Start new game';
       document.body.append(resetButton);
       //sets an event listener on our new button so when its clicked a new function resetGame()runs
