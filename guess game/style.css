@@ -1,0 +1,36 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+html {
+    font-family: sans-serif;
+  }
+
+  body {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    width: 50%;
+    max-width: 800px;
+    margin: 10% 10%;
+    padding: 10px 10px;
+  }
+
+  .form {
+      margin: 5% 2%;
+  }
+
+  .gameDescription{
+    margin: 5% 2%;
+  }
+
+  .guessSubmit {
+    margin: 5% 2%; 
+  }
+
+  .lastResult {
+    color: white;
+    padding: 3px;
+  }
