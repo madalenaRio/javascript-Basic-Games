@@ -56,6 +56,10 @@
       //creats a new button and adds it to the HTML in order to allow user to begin a new game
       resetButton = document.createElement('button');
       resetButton.style.width = '50%';
+      resetButton.style.margin = "10px";
+      resetButton.style.padding = "20px";
+      resetButton.style.background = "rgb(205, 6, 212)";
+      resetButton.style.color = "white";
       resetButton.textContent = 'Start new game';
       document.body.append(resetButton);
       //sets an event listener on our new button so when its clicked a new function resetGame()runs
