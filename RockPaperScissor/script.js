@@ -25,22 +25,40 @@ const PlayAgainButton = () => {
 }
 const playerOptionPaper = () => {
         player = paper;
-        // const elmPlayerChoiceMessage = document.getElementById('playerChoiceMessage');
-        // const elmPlayerChoiceMessageParagraph = document.createElement('p');
-        // PlayerChoiceMessageParagraph.innerText = PlayerChoiceMessage;
-        // PlayerChoiceMessage.appendChild(PlayerChoiceMessageParagraph);
-        // console.log('test1');
-        // return 'you choose paper';
+        const elemPlayerChoiceMessage = document.getElementById('playerChoiceMessage');
+        const elemPlayerChoiceMessageParg = document.createElement('p');
+        elemPlayerChoiceMessageParg.innerText = 'You chose paper';
+        elemPlayerChoiceMessage.appendChild(elemPlayerChoiceMessageParg);
+        const blockButtonScissors = document.getElementById('scissors');
+        blockButtonScissors.disabled = true;
+        const blockButtonRock = document.getElementById('rock');
+        blockButtonRock.disabled = true;
+        console.log('test1');
     }
 const playerOptionScissors = () => {
         player = scissors;
+        const elemPlayerChoiceMessage = document.getElementById('playerChoiceMessage');
+        const elemPlayerChoiceMessageParg = document.createElement('p');
+        elemPlayerChoiceMessageParg.innerText = 'You chose scissors';
+        elemPlayerChoiceMessage.appendChild(elemPlayerChoiceMessageParg);
+        const blockButtonPaper = document.getElementById('paper');
+        blockButtonPaper.disabled = true;
+        const blockButtonRock = document.getElementById('rock');
+        blockButtonRock.disabled = true;
         console.log('test2');
-        return 'you choose scissors';
+       
 }
 const playerOptionRock = () => {
         player = rock;
-        console.log('test3');
-        return 'you choose rock'
+        const elemPlayerChoiceMessage = document.getElementById('playerChoiceMessage');
+        const elemPlayerChoiceMessageParg = document.createElement('p');
+        elemPlayerChoiceMessageParg.innerText = 'You chose rock';
+        elemPlayerChoiceMessage.appendChild(elemPlayerChoiceMessageParg);
+        const blockButtonPaper = document.getElementById('scissors');
+        blockButtonPaper.disabled = true;
+        const blockButtonRock = document.getElementById('paper');
+        blockButtonRock.disabled = true;
+        console.log('test3');      
 }
 
 const elementPaper = document.getElementById('paper');
@@ -58,46 +76,54 @@ elementPlayAgainButton.addEventListener('click', PlayAgainButton);
 
 const playGame = (player, computer) => {
 
+        if (computer === paper) {
+            document.getElementById('scissors')
+            scissors.disabled = true;
+            document.getElementById('rock')
+            rock.disabled = true;
+        }
+        if (player === scissors) {
+            document.getElementById('paper')
+            paper.disabled = true;
+            document.getElementById('rock')
+            rock.disabled = true;
+        }
+        if (computer === rock) {
+            document.getElementById('paper')
+            paper.disabled = true;
+            document.getElementById('scissors')
+            scissors.disabled = true;
+        }
         if (player === paper) {
-        
             if (computer === paper) {
-                //console.log('its a draw! nobody won.');
                 return 'computer selected ' + computerchoice + ', its a draw! nobody won.';
             }
             if (computer === scissors) {
-                // console.log('computer won! you lose!');
                 return 'computer selected ' + computerchoice + ', computer won! you lose!';
             }
             if (computer === rock) {
-                //console.log('you won!!');
                 return 'computer selected ' + computerchoice + ', you won!!';
             }
         }
         if (player === scissors) {
             if (computer === paper) {
-                //console.log('you won!!');
                 return 'computer selected ' + computerchoice + ', you won!!';
             }
             if (computer === scissors) {
-                //console.log('its a draw! nobody won.');
                 return 'computer selected ' + computerchoice + ', its a draw! nobody won.';
             }
             if (computer === rock) {
-                //console.log('computer won! you lose!');
                 return 'computer selected ' + computerchoice + ', computer won! you lose!';
             }
         }
         if (player === rock) {
             if (computer === paper) {
-                //console.log('computer won! you lose!');
                 return 'computer selected ' + computerchoice + ', computer won! you lose!';
             }
             if (computer === scissors) {
-                //console.log('you won!!');
                 return 'computer selected ' + computerchoice + ', you won!!';
             }
             if (computer === rock) {
-                //console.log('its a draw! nobody won.');
                 return 'computer selected ' + computerchoice + ', its a draw! nobody won.';
             }
         }
