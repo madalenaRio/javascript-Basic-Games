@@ -24,7 +24,6 @@ const computerPlayButton = (event) => {
     let message = playGame(player, computer);
     // console.log('computer selected ' + computer);
     // console.log(message);
-
     const elementMessage = document.getElementById('message');
     const elementParagraph = document.createElement('p');
     elementParagraph.innerText = message;
@@ -46,47 +45,47 @@ const playGame = (player, computer) => {
     if (player === paper) {
         if (computer === paper) {
             //console.log('its a draw! nobody won.');
-            return 'its a draw! nobody won.';
+            return 'computer selected ' + computerchoice +', its a draw! nobody won.';
         }
         if (computer === scissors) {
            // console.log('computer won! you lose!');
-            return 'computer won! you lose!';
+            return 'computer selected ' + computerchoice +', computer won! you lose!';
         }
         if (computer === rock) {
             //console.log('you won!!');
-            return 'you won!!';
+            return 'computer selected ' + computerchoice +', you won!!';
         }
     }
-
     if (player === scissors) {
         if (computer === paper) {
             //console.log('you won!!');
-            return 'you won!!';
+            return 'computer selected ' + computerchoice +', you won!!';
         }
         if (computer === scissors) {
             //console.log('its a draw! nobody won.');
-            return 'its a draw! nobody won.';
+            return 'computer selected ' + computerchoice +', its a draw! nobody won.';
         }
         if (computer === rock) {
             //console.log('computer won! you lose!');
-            return 'computer won! you lose!';
+            return 'computer selected ' + computerchoice +', computer won! you lose!';
         }
     }
-
     if (player === rock) {
         if (computer === paper) {
             //console.log('computer won! you lose!');
-            return 'computer won! you lose!';
+            return 'computer selected ' + computerchoice +', computer won! you lose!';
         }
         if (computer === scissors) {
             //console.log('you won!!');
-            return 'you won!!';
+            return 'computer selected ' + computerchoice +', you won!!';
         }
         if (computer === rock) {
            //console.log('its a draw! nobody won.');
-            return 'its a draw! nobody won.';
+            return 'computer selected ' + computerchoice +', its a draw! nobody won.';
         }
     }
+
+    
 
 }
 
