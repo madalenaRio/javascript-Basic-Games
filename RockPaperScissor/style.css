@@ -1,63 +1,120 @@
+* {
+    margin:0%;
+    padding:0%;
+}
+
+body {
+    display:flex;
+    flex-direction: column;
+    margin: 0%;
+    align-items: center;
+}
+
+.playerOptions {
+    max-width:1200px; /*whatever you want*/
+    width:auto;
+    margin:5% auto;
+    margin-bottom: 2%;
+}
+
+.playButtonContainer {
+    margin-bottom: 2%;
+}
+.againButtonContainer {
+    margin-bottom: 2%;
+}
+
+#playerChoiceMessage {
+    align-items: center;
+    color: #f5f9f7;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    max-width: 1200px;
+    width: auto;
+    padding: 15px;
+    background-color: rgb(5, 149, 222);
+}
+
+#message{
+    max-width: 350px;
+    width: auto;
+    align-items: center;
+    text-align: center;
+    color: #03321c;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: rgb(12, 228, 243);
+}
+
+#paper:hover, #scissors:hover, #rock:hover {
+    background-color: rgb(11, 95, 213);
+    color: aliceblue;
+    
+}
+
 #paper {
     background-color: #f3c633;
-    /* Green */
     border: none;
+    border-radius: 8px;
     color: rgb(75, 31, 31);
-    padding: 15px 32px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-
+    font-size: 30px;
+    font-weight: bold;
+    padding: 15px 32px;
 }
-
 #scissors {
     background-color: #f3c633;
-    /* Green */
     border: none;
+    border-radius: 8px;
     color: rgb(75, 31, 31);
-    padding: 15px 32px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-
+    font-size: 30px;
+    font-weight: bold;
+    padding: 15px 32px;
 }
-
 #rock {
     background-color: #f3c633;
-    /* Green */
     border: none;
+    border-radius: 8px;
     color: rgb(75, 31, 31);
-    padding: 15px 32px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-
+    font-size: 30px;
+    font-weight: bold;
+    padding: 15px 32px;
 }
 
+#playbutton:hover {
+    background-color: #00aaff;
+    color: #03321c;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 15px 32px;
+}
 #playbutton {
     background-color: #0d9c59;
-    /* Green */
     border: none;
     color: white;
     padding: 15px 32px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-
+    font-size: 30px;
+    font-weight: bold;
+    visibility:visible; 
 }
 
+#playagainbutton:hover {
+    background-color: #78044f;
+    color: #ffffff;
+    
+}
 #playagainbutton {
     background-color: #e80d98;
-    /* Green */
     border: none;
     color: white;
     padding: 15px 32px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+    font-size: 30px;
+    font-weight: bold;
+    visibility:hidden;
 }

@@ -1,26 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <script defer src="script.js"></script>
-        <title>Rock Paper Scissors game</title>
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Rock Paper Scissors game</title>
+</head>
+
 <body>
     <div class="playerOptions">
 
-        <button class="button" id="paper">paper</button>
+        <button class="button" class="hvr-grow" id="paper">paper</button>
         <button class="button" id="scissors">scissors</button>
         <button class="button" id="rock">rock</button>
-        <button class="playbutton" id="playbutton">play</button>
-        <button class="playagainbutton" id="playagainbutton">play again</button>
 
     </div>
 
-    <div class="playerChoiceMessage" id="playerChoiceMessage"></div> 
+    <div class="playButtonContainer">
+        <button class="playbutton" id="playbutton">play</button>
+       
+    </div>
+
+    <div class="againButtonContainer">
+        <button class="playagainbutton" id="playagainbutton">play again</button>
+    </div>
+
+    <div class="playerChoiceMessage" id="playerChoiceMessage"></div>
     <div class="message" id="message"></div>
 
 </body>
+
 </html>

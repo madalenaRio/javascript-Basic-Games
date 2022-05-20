@@ -18,6 +18,8 @@ const computerPlayButton = () => {
     const elementParagraph = document.createElement('p');
     elementParagraph.innerText = message;
     elementMessage.appendChild(elementParagraph);
+    document.getElementById("playagainbutton").style.visibility = "visible";
+    document.getElementById("playbutton").style.visibility = "hidden";
 }
 
 const PlayAgainButton = () => {
@@ -29,10 +31,12 @@ const playerOptionPaper = () => {
         const elemPlayerChoiceMessageParg = document.createElement('p');
         elemPlayerChoiceMessageParg.innerText = 'You chose paper';
         elemPlayerChoiceMessage.appendChild(elemPlayerChoiceMessageParg);
-        const blockButtonScissors = document.getElementById('scissors');
-        blockButtonScissors.disabled = true;
+        const blockButtonPaper = document.getElementById('paper');
+        blockButtonPaper.disabled = true;
         const blockButtonRock = document.getElementById('rock');
         blockButtonRock.disabled = true;
+        const blockButtonScissors = document.getElementById('scissors');
+        blockButtonScissors.disabled = true;
         console.log('test1');
     }
 const playerOptionScissors = () => {
@@ -45,6 +49,8 @@ const playerOptionScissors = () => {
         blockButtonPaper.disabled = true;
         const blockButtonRock = document.getElementById('rock');
         blockButtonRock.disabled = true;
+        const blockButtonScissors = document.getElementById('scissors');
+        blockButtonScissors.disabled = true;
         console.log('test2');
        
 }
@@ -54,10 +60,12 @@ const playerOptionRock = () => {
         const elemPlayerChoiceMessageParg = document.createElement('p');
         elemPlayerChoiceMessageParg.innerText = 'You chose rock';
         elemPlayerChoiceMessage.appendChild(elemPlayerChoiceMessageParg);
-        const blockButtonPaper = document.getElementById('scissors');
+        const blockButtonPaper = document.getElementById('paper');
         blockButtonPaper.disabled = true;
-        const blockButtonRock = document.getElementById('paper');
+        const blockButtonRock = document.getElementById('rock');
         blockButtonRock.disabled = true;
+        const blockButtonScissors = document.getElementById('scissors');
+        blockButtonScissors.disabled = true;
         console.log('test3');      
 }
 
@@ -76,24 +84,7 @@ elementPlayAgainButton.addEventListener('click', PlayAgainButton);
 
 const playGame = (player, computer) => {
 
-        if (computer === paper) {
-            document.getElementById('scissors')
-            scissors.disabled = true;
-            document.getElementById('rock')
-            rock.disabled = true;
-        }
-        if (player === scissors) {
-            document.getElementById('paper')
-            paper.disabled = true;
-            document.getElementById('rock')
-            rock.disabled = true;
-        }
-        if (computer === rock) {
-            document.getElementById('paper')
-            paper.disabled = true;
-            document.getElementById('scissors')
-            scissors.disabled = true;
-        }
+   
         if (player === paper) {
             if (computer === paper) {
                 return 'computer selected ' + computerchoice + ', its a draw! nobody won.';
@@ -127,10 +118,6 @@ const playGame = (player, computer) => {
                 return 'computer selected ' + computerchoice + ', its a draw! nobody won.';
             }
         }
-
 }
-
-
-
 
 
