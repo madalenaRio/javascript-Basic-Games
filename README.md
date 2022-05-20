@@ -5,7 +5,13 @@ made by student from "YU-4" classroom: Madalena Rio
 
 My links to 3 games exercises
 
-# guessing game netifly link:
+# guessing game netfly link:
 guessing-game-madalenario.netlify.app
+
+# Rock paper scissor netfly link:
+rockpaperscissors-madalena.netlify.app
+
+# 21 card Game aka blackJack
+
 
 
