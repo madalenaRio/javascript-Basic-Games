@@ -8,7 +8,7 @@ In this first try I attempted to begin with the css layout and HTML structure bu
 I decided therefor to stop, and begin a new folder repository.
 In order to keep all the webpage development stages for evaluation porpuses I leave this pages has is.
 
-On the second folder 21CardGame2version you can find my finished version of this exercise.
+On the second folder 21CardGame2version inside my git you can find my finished version of this exercise.
 
 *bellow is the context in wich this webpage was created*
 
