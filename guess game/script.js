@@ -25,7 +25,7 @@
         lowOrHi.textContent = '';
         setGameOver();
       } else if (guessCount === 3) { // else it will check if the user has reached its last turn
-        lastResult.textContent = 'Bummer... You guessed ' +'['+ Number(guessField.value) +' ]' + ' and the secret number was ' +'['+ randomNumber +' ]';
+        lastResult.textContent = 'Bummer... You guessed ' + Number(guessField.value) + ' and the secret number was ' + randomNumber;
         lowOrHi.textContent = '';
         setGameOver();
       } else { // or else it will check if player has more guesses left
@@ -50,14 +50,17 @@
     //now we must set a game over function to complete the "game cycle"
 
     function setGameOver() {
+      //fetches the element where we will create a startAgain button
+      const resultParas = document.getElementById('resultParas')
       //to stop user from playing more  after its turn is over
       guessField.disabled = true;
       guessSubmit.disabled = true;
-      //creats a new button and adds it to the HTML in order to allow user to begin a new game
-      resetButton = document.createElement('button');
+      //creates a new button and adds it to the HTML in order to allow user to begin a new game
+      const resetButton = document.createElement('button');
+      resetButton.setAttribute('id', 'resetButton');
       resetButton.style.width = '50%';
-      resetButton.textContent = 'Start new game';
-      document.body.append(resetButton);
+      resetButton.innerHTML = 'Start new game';
+      resultParas.append(resetButton);
       //sets an event listener on our new button so when its clicked a new function resetGame()runs
       resetButton.addEventListener('click', resetGame);
     }
@@ -66,29 +69,33 @@
     // resseting all the code to how it was at the start of the game, so the player can play again.
 
     function resetGame() {
-      //sets the guess count back to 1
-      guessCount = 1;
+      location.reload();
 
-      //Empties all the text out of the information paragraphs.
-      const resetParas = document.querySelectorAll('.resultParas p');
-      for (const resetPara of resetParas) {
-        resetPara.textContent = '';
-      }
+    ///   --------------this code below did not work decide instead for a relaode method ----------------------/////
+    
+    //   //sets the guess count back to 1
+    //   guessCount = 1;
 
-      //Removes the reset button from our code.
-      resetButton.parentNode.removeChild(resetButton);
+    //   //Empties all the text out of the information paragraphs.
+    //   const resetParas = document.querySelectorAll('.resultParas');
+    //   for (const resetPara of resetParas) {
+    //     resetPara.textContent = '';
+    //   }
 
-      //Enables the form elements, and empties and focuses the text field, ready for a new guess to be entered.
-      guessField.disabled = false;
-      guessSubmit.disabled = false;
-      guessField.value = '';
-      guessField.focus();
+    //   //Removes the reset button from our code.
+    //   resetButton.parentNode.removeChild(resetButton);
 
-      //Removes the background color from the lastResult paragraph.
-      lastResult.style.backgroundColor = 'white';
+    //   //Enables the form elements, and empties and focuses the text field, ready for a new guess to be entered.
+    //   guessField.disabled = false;
+    //   guessSubmit.disabled = false;
+    //   guessField.value = '';
+    //   guessField.focus();
 
-      //Generates a new random number so that you are not just guessing the same number again!
-      randomNumber = Math.floor(Math.random() * 17) + 1;
+    //   //Removes the background color from the lastResult paragraph.
+    //   lastResult.style.backgroundColor = 'white';
+
+    //   //Generates a new random number so that you are not just guessing the same number again!
+    //   randomNumber = Math.floor(Math.random() * 17) + 1;
     }
 
     // toturial followed : https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/A_first_splash
