@@ -46,6 +46,7 @@ section {
     height: 100%;
     position: absolute;   
     border-radius: 6px;
+    pointer-events: none;
 }
 
 .back {
