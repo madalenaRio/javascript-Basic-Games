@@ -10,7 +10,7 @@ playerLivesCount.textContent = playerLives;
 
 //Generate game content via array of objects
 
-const getData = () => [
+const cardData = () => [
 { imgSrc:'./pics/apple.jpg', name:'apple' },
 { imgSrc:'./pics/banana.jpg', name:'banana' },
 { imgSrc:'./pics/cherry.jpg', name:'cherry' },
@@ -29,13 +29,43 @@ const getData = () => [
 { imgSrc:'./pics/passionfruit.jpg', name:'passion fruit' },
 ]
 
-const data = getData();
+const randomizeCards = () => {
+    const getCardData = cardData();
+    getCardData.sort( () => Math.random() -0.5);
+    return getCardData;
+
+    // console.log(getCardData);
+};
+
+const cardGenerator = () => {
+    const cardData = randomizeCards();
+    
+    // creat HTML elements for cards via forEach loop
+    cardData.forEach((item) => {
+        console.log(item);
+        
+        const card = document.createElement('div');
+        const cardFace = document.createElement('img');
+        const cardBack = document.createElement('div');
+        card.classList = 'card';
+        cardFace.classList = 'face';
+        cardBack.classList = 'back';
+        //attach images and name to the cards
+        cardFace.src = item.imgSrc;
+        
+        //attach cards to section in HTML
+        section.appendChild(card);
+        card.appendChild(cardFace);
+        card.appendChild(cardBack);
 
 
-// let memoryCard = [
-
-// {imgSrc: '.pics/apple.jpg'}
+    });
 
 
+    
 
-// ]
+
+
+}
+
+cardGenerator()
