@@ -52,20 +52,19 @@ const cardGenerator = () => {
         cardBack.classList = 'back';
         //attach images and name to the cards
         cardFace.src = item.imgSrc;
-        
+
         //attach cards to section in HTML
         section.appendChild(card);
         card.appendChild(cardFace);
         card.appendChild(cardBack);
 
+        card.addEventListener('click', (e) => {
+            card.classList.toggle('toggleCard');
+
+        })
 
     });
 
-
-    
-
-
-
-}
+};
 
 cardGenerator()
