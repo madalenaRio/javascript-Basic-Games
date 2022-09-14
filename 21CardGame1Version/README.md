@@ -8,22 +8,13 @@ In this first try I attempted to begin with the css layout and HTML structure bu
 I decided therefor to stop, and begin a new folder repository.
 In order to keep all the webpage development stages for evaluation porpuses I leave this pages has is.
 
-On the second folder 21CardGame2version inside my git you can find my finished version of this exercise.
+On the second folder 21CardGame2version inside thi github repository you can find my finished version of this exercise.
 
 *bellow is the context in wich this GitHub Repository was created*
 
 # yu-4-games-madalenaRio
-This webpages where created has exercises in the context of a webdeveloper training program followed in Ghent, Belgium, at BECODE.ORG campus-Ghent.
+These games where created has exercises in the context of a webdeveloper training program followed in Ghent, Belgium, at BECODE.ORG campus-Ghent.
 Created by student from "YU-4" classroom: Madalena Rio
-
-# main objective of the exercises:
-. Research and Develop game "logic".
-. DOM manipulation
-. Conditional statements (if)
-. Generate random outcomes
-. Basic algorithms
-. Array manipulation
-
 
 My links to 3 games exercises
 
