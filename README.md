@@ -4,6 +4,7 @@ Student- Madalena Rio
 
 # yu-4-games-madalenaRio
 This GitHub repository was created has an exercise in the context of a webdeveloper training program followed in Ghent, Belgium, at BECODE.ORG campus-Ghent.
+
 Created by student from "YU-4" classroom: Madalena Rio
 
 # main objective of this collection of exercises:
