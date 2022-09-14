@@ -7,11 +7,15 @@ This GitHub repository was created has an exercise in the context of a webdevelo
 Created by student from "YU-4" classroom: Madalena Rio
 
 # main objective of this collection of exercises:
-. Research and develope game logic.
+. Research and develop game logic.
+
 . DOM manipulation
+
 . Use of conditional statements, boleans and array iteration
+
 . Develope logic to generate random outcomes
-. Research, develope and implement basic Algorithms
+
+. Research, develop and implement basic Algorithms
 
 
 Links to my 3 games exercises 
