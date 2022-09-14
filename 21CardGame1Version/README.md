@@ -17,13 +17,11 @@ This webpages where created has exercises in the context of a webdeveloper train
 Created by student from "YU-4" classroom: Madalena Rio
 
 # main objective of the exercises:
-. Select a random number
-. Link JavaScript to your html
-. Select a random element
+. Research and Develop game "logic".
+. DOM manipulation
 . Conditional statements (if)
 . Generate random outcomes
-. basic algorithms
-. Change things in the DOM (Aka canvas = cheating)
+. Basic algorithms
 . Array manipulation
 
 
