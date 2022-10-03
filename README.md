@@ -29,3 +29,6 @@ https://rockpaperscissors-madalena.netlify.app/
 
 # 21 card Game aka blackJack - netifly
 https://madalenasblackjackcorner.netlify.app/
+
+
+some change
