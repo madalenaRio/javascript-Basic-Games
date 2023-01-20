@@ -21,6 +21,9 @@ Created by student from "YU-4" classroom: Madalena Rio
 
 Links to my 3 games exercises 
 
+# Memory game - netfly link:
+https://madalenamemorygamecorner.netlify.app
+
 # Guessing game - netfly link:
 https://guessing-game-madalenario.netlify.app/
 
